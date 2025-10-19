@@ -1,148 +1,426 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flight Ticket</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      min-height: 100vh;
-      margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-    .single-card-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      min-height: 100vh;
-    }
-    .card {
-      position: relative;
-      width: 400px;
-      min-height: 520px;
-      border-radius: 1.5rem;
-      overflow: hidden;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-8px) scale(1.03);
-      box-shadow: 0 16px 40px 0 rgba(31, 38, 135, 0.22);
-    }
-    .card-image {
-      width: 100%;
-      height: 240px;
-      background-image: url('p3.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-    .card-content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 2rem 1.5rem 1.5rem 1.5rem;
-      position: relative;
-      z-index: 1;
-    }
-    .frosted {
-      background: rgba(255,255,255,0.25);
-      backdrop-filter: blur(12px) saturate(180%);
-      -webkit-backdrop-filter: blur(12px) saturate(180%);
-      border-radius: 1rem;
-      border: 1px solid rgba(255,255,255,0.3);
-      box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.10);
-      padding: 2rem 1.5rem 1.5rem 1.5rem;
-      margin-top: -2.5rem;
-      margin-bottom: 0.5rem;
-      text-align: center;
-    }
-    .card-title {
-      font-size: 2rem;
-      font-weight: 600;
-      color: #22223b;
-      margin-bottom: 0.5rem;
-    }
-    .card-desc {
-      color: #4a4e69;
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-    .card-link-btn {
-      display: inline-block;
-      padding: 0.75rem 2rem;
-      background: #4f46e5;
-      color: #fff;
-      border: none;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 1.1rem;
-      text-decoration: none;
-      box-shadow: 0 2px 8px rgba(31, 38, 135, 0.10);
-      transition: background 0.2s;
-    }
-    .card-link-btn:hover {
-      background: #3730a3;
-    }
-    @media (max-width: 600px) {
-      .card {
-        width: 95vw;
-        min-width: unset;
-        max-width: 99vw;
-      }
-    }
-    .header-logo-title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 3rem;
-      margin-top: 5rem;
-    }
-    .logo-img {
-      width: 72px;
-      height: 72px;
-      object-fit: contain;
-      border-radius: 16px;
-      box-shadow: 0 2px 12px rgba(31, 38, 135, 0.12);
-      background: #fff;
-    }
-    .header-logo-title h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-    }
-  </style>
-</head>
-<body>
-  <div class="header-logo-title">
-    <img src="logo.png" alt="Logo" class="logo-img">
-    <h1>jamasp AI</h1>
-  </div>
-  <div class="single-card-container">
-    <div class="card">
-      <div class="card-image" style="background-image: url('p3.jpg');"></div>
-      <div class="card-content">
-        <div class="frosted">
-          <div class="card-title">Page 1</div>
-          <div class="card-desc">This is a placeholder for Page 1, styled as a large frosted glass card. You can add more content here as needed.</div>
+<html>
+  <head>
+    <style>body {transition: opacity ease-in 0.2s; } 
+      body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+    </style>
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no, user-scalable=no"><meta name="description" content=""><meta name="robots" content="index,follow"><meta property="og:locale" content="fa_IR"><meta property="og:type" content="website"><meta property="og:site_name" content="کیو آر منوساز"><meta property="og:title" content="LAFARINE"><meta property="og:description" content=""><meta property="og:url" content="https"><meta property="og:image" content=""><meta name="twitter:title" content="LAFARINE"><meta name="twitter:description" content=""><meta name="twitter:image" content=""><meta name="twitter:site" content="@vixaweb"><meta name="twitter:creator" content="@vixaweb"><title>LAFARINE</title><link rel="icon" href="https://qrmenusaz.com/Temp/icon.png" type="image/png">        <script src="https://lafarinee.qrmenusaz.com/Js/jquery.js?ver78" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://lafarinee.qrmenusaz.com/Css/main.css?ver78" type="text/css">
+        <link rel="stylesheet" href="https://lafarinee.qrmenusaz.com/Css/menu6.css?ver78" type="text/css">
+        <script src="https://lafarinee.qrmenusaz.com/Js/main.js?ver78" type="text/javascript"></script>
+        <script src="https://lafarinee.qrmenusaz.com/Js/menu6.js?ver78" type="text/javascript"></script>
 
+                
+        <style>
+            body { background-color:#E3B586; }
+            #m6_menu { background-color:#E3B586; }
+            .m6_main_cat { background-color:#E3B586; }
+            .m6_cat_checked { background-color:#E3B586; }
+            .m6_main_cat { color:#FFFFFF; }
+            .m6_cat { color:#FFFFFF; }
+            #rest_info > * i { background-color:#E3B586; }
+            .m6_food > div:nth-child(2) span { background-color:#E3B586;color:#FFFFFF; }
+            #note_button { background-color:#E3B586;color:#FFFFFF; }
+            #reserve_button > * { background-color:#E3B586;color:#FFFFFF; }
+            #option_add_note { background-color:#E3B586;color:#FFFFFF; }
+        </style>
+    	<style>.m6_cat {font-size: 8pt;line-height: 17px;}
+.m6_main_cat{width:46%; float:left;padding: 0% 0% 0% 0%;margin: -8% -12% 2% 5%;max-width: 139px;display: contents;}
+#m6_main_menu > div{padding:10px 0px 30px;}
+.m6_main_cat img{height: 135px;margin-left: 0px;padding: 23px 0px 10px 0px;}
+.m6_main_cat>span{display:none;}
+.m6_main_cat{text-align:center;}
+.m6_main_cat{background:none;}
+#t6_logo img{width:70%;padding:30px 0px 40px 0px;}
+#m6_menu{background-color:#000000;}
+.m6_cat_checked{background-color:#ffffff;}
+.m6_food > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){font-family: tahoma;}
+.m6_food{border-bottom: groove; border-bottom-color:#000000;}
+.food_label{background-color:#e3b586;color:#000000;}
+.m6_cat_checked{background-color:#e3b586;}
+#m6_main_menu > div{padding: 0px 0px;}
+.m6_food > div:nth-child(1){    background-color: #000000; color: #ffffff;}
+.mag_contacts_row img{height:107px;margin-left:0px;}
+.m6_food > div:nth-child(2) {padding: 0px 10px 5px;background-color: #000000; color: #000000}
+.m6_food > div:nth-child(2) span {background-color: #222222;color: #ffffff;}
+.m6_food > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {font-family: black,tahoma;color:#e3b586;font-size:16px}
+#rest_info {margin: 55px auto 40px;width: 80%;max-width: 350px;text-align: center;}
+#rest_info > span i {width: 45px;height: 45px;}</style>
+                <script src="https://lafarinee.qrmenusaz.com/Js/order.js?ver78" type="text/javascript"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+            </head>
+    <body onresize="update_graphic()">
+                <script>var note_button_name = 'افزودن به یادداشت';</script>
+        <script> var back_name = 'بازگشت'; </script>
+                            <div id="cover" style="background-image:url'https://lafarinee.qrmenusaz.com/Media/bm_1012_1657121788.jpg"></div>
+                
+        <div id="m6_main_menu" style="display: none;">
+            <div>
+                <div id="t6_logo"><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1657121788.png"></div>
+                                    <div class="m6_main_cat" onclick="show_t6_category(7560)">
+                        <img src=" https://lafarinee.qrmenusaz.com/Media/ico_1012_1657119820.png">                        <span>Restaurant</span>
+                    </div>
+                                    <div class="m6_main_cat" onclick="show_t6_category(7559)">
+                        <img src=" https://lafarinee.qrmenusaz.com/Media/ico_1012_1657119806.png">                        <span>Cafe </span>
+                    </div>
+                                    <div class="m6_main_cat" onclick="show_t6_category(7558)">
+                        <img src=" https://lafarinee.qrmenusaz.com/Media/ico_1012_1657119791.png">                        <span>Pastry</span>
+                    </div>
+                
+                
+                
+
+
+
+
+
+
+
+                              
+                            
+                
+              
+              
+              
+              
+                
+
+                
+                
+                
+              
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+                <div id="rest_info">
+                                            <span id="rest_phone"><i onclick="view_menu_contact(this,'&lt;a href=\'tel:09173037200\'&gt;09173037200&lt;/a&gt;')"></i></span>
+                                                                <span id="rest_address"><i onclick="view_menu_contact(this,'&lt;a href=\'https://goo.gl/maps/5ahkznNS1j9rJ9aq8\'&gt;شیراز، انتهای بلوار نیایش  &lt;/a&gt;')"></i></span>
+                                                                <span id="rest_insta"><i onclick="view_menu_contact(this,'&lt;a target=\'_blank\' href=\'https://instagram.com/lafarine.lounge\'&gt;lafarine.lounge&lt;/a&gt;')"></i></span>
+                                        <div id="rest_result"><span></span></div>
+                </div>
+                <script>
+                    function view_menu_contact(ele,html) {
+                        var page_h = $('#m6_main_menu').outerHeight();
+                        $('#m6_main_menu').animate({scrollTop:page_h});
+                        $("#rest_info > span").removeClass("selected_rest");
+                        $(ele).parents("span").addClass("selected_rest");
+                        $("#rest_result > span").html(html);
+                        $("#rest_result").slideDown(200);
+                    }
+                </script>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  
- 
-</body>
 
-</html> 
+        <div id="m6_menu" style="left: 0px;"><div class="m6_cat" onclick="show_t6_category(0)">بازگشت</div><div class="m6_cat m6_cat_checked" id="menu_1" onclick="scroll_to_foods(1)"><img src="https://lafarinee.qrmenusaz.com/Media/ico_1012_1658661858.png"><span>Breakfast</span></div><div class="m6_cat" id="menu_2" onclick="scroll_to_foods(2)"><img src="https://lafarinee.qrmenusaz.com/Media/ico_1012_1657122630.png"><span>Salad</span></div><div class="m6_cat" id="menu_3" onclick="scroll_to_foods(3)"><img src="https://lafarinee.qrmenusaz.com/Media/ico_1012_1657122598.png"><span>Appetizer</span></div><div class="m6_cat" id="menu_4" onclick="scroll_to_foods(4)"><img src="https://lafarinee.qrmenusaz.com/Media/ico_1012_1657122672.png"><span>Main Course</span></div><div class="m6_cat" id="menu_5" onclick="scroll_to_foods(5)"><img src="https://lafarinee.qrmenusaz.com/Media/ico_1012_1657122699.png"><span>Pizza</span></div><div class="m6_cat" id="menu_6" onclick="scroll_to_foods(6)"><img src="https://lafarinee.qrmenusaz.com/Media/ico_1012_1657122689.png"><span>Sandwich</span></div><div class="m6_cat" id="menu_7" onclick="scroll_to_foods(7)"><img src="https://lafarinee.qrmenusaz.com/Media/ico_1012_1657122654.png"><span>Pasta</span></div></div>
+        <div id="m6_food_holder"><div><div class="m6_title" id="section_1" data-index="1"><div class="food_label">Breakfast</div><div class="m6_food food_bx" data-hasoption="false" data-id="48413" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1714573380.jpg" data-price="386" data-name="پیده بوقلمون اسفناج"><div onclick="get_food_detail(48413)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1714573380.jpg"></div><div><div>پیده بوقلمون اسفناج</div><div> صبحی پرانرژی و شیک
+شروع روز با خمیر تازه و طلایی پیده، پر شده از لایه&zwnj;ای اسفناج خوش&zwnj;عطر . روی آن بوقلمون دودی و بیکن، همراه با زرده&zwnj;ی تخم&zwnj;مرغ نیم&zwnj;پز که وسطش برق می&zwnj;زند.
+هر لقمه، ترکیبی از طراوت سبزی، خوشمزگی بوقلمون و غنای پنیر است؛ صبحانه&zwnj;ای کامل، سالم و در عین حال لوکس برای روزهایی که می&zwnj;خواهید متفاوت آغاز شوند.</div><div>386 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="45145" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1660755389.jpg" data-price="499" data-name="لافارین لاور"><div onclick="get_food_detail(45145)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1660755389.jpg"></div><div><div>لافارین لاور</div><div>لافارین لاوِر؛ امضای خوشمزه لافارین
+کروسان کره&zwnj;ای تازه با بوقلمون دودی، آووکادو، تخم&zwnj;مرغ اسکرامبل و پنیر موتزارلای تازه، در کنار سالاد میکس. ترکیبی کامل، غنی و لوکس؛ انتخابی که فقط در لافارین پیدا می&zwnj;شود.</div><div>499 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="48416" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686506324.jpg" data-price="430" data-name="املت قورمه"><div onclick="get_food_detail(48416)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686506324.jpg"></div><div><div>املت قورمه</div><div>ترکیبی منحصربه&zwnj;فرد از تخم&zwnj;مرغ تازه و گوشت گوسفند آرام&zwnj;پز شده طی 12 ساعت، همراه با سس بادمجان دودی و خوش&zwnj;عطر. صبحانه&zwnj;ای اصیل، غنی و متفاوت که طعم خانگی را به یک تجربه لوکس تبدیل می&zwnj;کند.</div><div>430 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="45140" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1714573258.jpg" data-price="499" data-name="بشقاب انگلیسی"><div onclick="get_food_detail(45140)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1714573258.jpg"></div><div><div>بشقاب انگلیسی</div><div>کلاسیک و پُر&zwnj;انرژی
+ترکیبی کامل از تخم&zwnj;مرغ نیمرو، بیکن دودی، سوسیس آبدار، لوبیای تند و نان لوف با خمیر ترش طلایی. یک صبحانه کلاسیک اروپایی، پُر از انرژی و خوشمزگی برای شروعی قدرتمند.</div><div>499 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="45141" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686505406.jpg" data-price="350" data-name="صبحانه ایرانی"><div onclick="get_food_detail(45141)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686505406.jpg"></div><div><div>صبحانه ایرانی</div><div>طعم خانه و خاطره
+سفره&zwnj;ای پر از نان تازه، پنیر محلی، سبزی معطر، گردو و گوجه&zwnj;خیار؛ همراه با عطر چای ایرانی دم&zwnj;کشیده. ساده، صمیمی و پرانرژی، مثل صبح&zwnj;های قدیمی در خانه مادربزرگ.</div><div>350 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="49800" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1747304046.jpeg" data-price="220" data-name="املت اسپایسی (تند)"><div onclick="get_food_detail(49800)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1747304046.jpeg"></div><div><div>املت اسپایسی (تند) | Spicy omelette</div><div>اُملت ایرانی تند؛ صبحی پر از هیجان
+گوجه تازه و داغ، تخم&zwnj;مرغ خوش&zwnj;عطر و فلفل&zwnj;های تند آتشین. طعمی صمیمی و نوستالژیک، اما با حرارتی جسورانه برای کسانی که صبحشان را پرانرژی&zwnj;تر می&zwnj;خواهند.</div><div>220 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="45139" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686505533.jpg" data-price="410" data-name="پنکیک لاور"><div onclick="get_food_detail(45139)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686505533.jpg"></div><div><div>پنکیک لاور</div><div>عشق در هر لایه
+پنکیک&zwnj;های نرم و سبک، روی هم چیده شده و پوشیده از عسل، میوه&zwnj;های تازه . هر لقمه، ترکیبی از شیرینی لطیف و طراوت میوه است؛ تجربه&zwnj;ای عاشقانه برای شروع یک روز خاص.</div><div>410 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="49812" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1747304090.jpeg" data-price="500" data-name="پستو لاور"><div onclick="get_food_detail(49812)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1747304090.jpeg"></div><div><div>پستو لاور</div><div> طعمی مدیترانه&zwnj;ای در قلب کروسان
+ کره&zwnj;ای تازه با اسکرمبل
+، پستو، بیکن بوقلمون دودی ؛ در کنار کاهوی فرانسوی و سالاد سبزیجات. هر لقمه، انفجاری از عطر ریحان، کره و بیکن بوقلمون دودی&zwnj;ست؛ انتخابی شیک و متفاوت برای عاشقان طعم&zwnj;های خاص</div><div>500 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="45138" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1660755130.jpg" data-price="349" data-name="آووکادو تست"><div onclick="get_food_detail(45138)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1660755130.jpg"></div><div><div>آووکادو تست</div><div>انتخابی سالم و شیک
+نان لوف تست تازه با دیپ آووکادو خامه&zwnj;ای، روی آن پوچداگ نیم&zwnj;پز، روکولا. ترکیبی سبک، مقوی و پر از انرژی سبز؛ صبحانه&zwnj;ای مدرن برای کسانی که به دنبال شروعی سالم و لاکچری هستند</div><div>349 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="50265" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1747304018.jpeg" data-price="202" data-name="املت ایرانی"><div onclick="get_food_detail(50265)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1747304018.jpeg"></div><div><div>املت ایرانی</div><div>تخم&zwnj;مرغ تازه و گوجه&zwnj;ی داغ و خوش&zwnj;عطر، ساده و صمیمی مثل صبحانه&zwnj;های قدیمی. یک انتخاب نوستالژیک و پرانرژی که همیشه دلنشین است.</div><div>202 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div></div><div class="m6_title" id="section_2" data-index="2"><div class="food_label">Salad</div><div class="m6_food food_bx" data-hasoption="false" data-id="48057" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503512.jpg" data-price="455" data-name="وجی سالاد"><div onclick="get_food_detail(48057)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503512.jpg"></div><div><div>وجی سالاد</div><div>جشن سبزیجات تازه
+کاهوی رُمی ترد، میکس سبزیجات خاص، نان چند&zwnj;غله و پنیر فتا. همراه با گوجه گیلاسی شیرین، بادام هندی، کرنبری و میوه فصل، با سس خانگی بالزامیک.
+سالادی رنگارنگ، تازه و خاص که هم سبک است و هم سرشار از طعم&zwnj;های خوشمزه.</div><div>455 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44089" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503565.jpg" data-price="420" data-name="گرین سالاد"><div onclick="get_food_detail(44089)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503565.jpg"></div><div><div>گرین سالاد</div><div>طراوت سبز در یک بشقاب
+ترکیبی از کاهوی رُمی ترد، خیار آبدار، زیتون، بروکلی، کیوی تازه، فلفل دلمه&zwnj;ای و لوبیا سبز؛ همراه با میکس سبزیجات خاص و سس سبز امضا شده لافارین.
+هر لقمه پر از تازگی، انرژی و طعمی متفاوت برای کسانی که دنبال انتخابی سالم و خاص هستند.</div><div>420 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44092" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503468.jpg" data-price="440" data-name="سالاد آنترکود"><div onclick="get_food_detail(44092)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503468.jpg"></div><div><div>سالاد آنترکود</div><div>تعادل خوشمزه و لوکس
+کاهوی پیچ تازه با مرغ گریل&zwnj;شده آبدار، تربچه ترد و گوجه گیلاسی شیرین؛ در کنار گردوی کاراملی و جعفری معطر. همه این طعم&zwnj;ها با سس خردل شیرین کامل می&zwnj;شود؛ یک سالاد خاص و متعادل که هم سبک است، هم لذیذ.</div><div>440 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="48290" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1687020552.jpg" data-price="480" data-name="سالاد سزار با مرغ گریل "><div onclick="get_food_detail(48290)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1687020552.jpg"></div><div><div>سالاد سزار با مرغ گریل </div><div>سالاد سزار با مرغ گریل؛ کلاسیک همیشه محبوب
+کاهوی رومی تازه با مرغ گریل&zwnj;شده آبدار، نان کراوتن&zwnj;های طلایی و پنیر پارمزان، همراه با سس سزار مخصوص. طعمی با اصالت، خوشمزه و همیشه پرطرفدار.</div><div>480 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44088" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1657361652.jpeg" data-price="660" data-name="سالاد استیک"><div onclick="get_food_detail(44088)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1657361652.jpeg"></div><div><div>سالاد استیک</div><div> سالاد استیک؛ لوکس و پرانرژی
+فیله گوساله گریل&zwnj;شده روی بستر کاهو رُمی و پیچ، اسفناج، روکولا و سبزیجات تازه. همراه با توت فرنگی آبدار، بیبی کورن، گردو کاراملی و زیتون سیاه، تکمیل&zwnj;شده با سس انار و رُکتوت فرنگی.
+یک ترکیب خاص، خوشمزه و سرشار از انرژی برای کسانی که سالاد را در لوکس&zwnj;ترین شکلش می&zwnj;خواهند.</div><div>660 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div></div><div class="m6_title" id="section_3" data-index="3"><div class="food_label">Appetizer</div><div class="m6_food food_bx" data-hasoption="false" data-id="49507" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1756542747.jpg" data-price="228" data-name="اِسمَش پوتیتو"><div onclick="get_food_detail(49507)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1756542747.jpg"></div><div><div>اِسمَش پوتیتو | Smash potato</div><div>سیب&zwnj;زمینی به سبک لافارین
+سیب&zwnj;زمینی&zwnj;های کوچک تنوری و له&zwnj;شده، بافتی کریسپی و طلایی پیدا کرده&zwnj;اند؛ روی آن&zwnj;ها سس پنیر خامه&zwnj;ای، چیمی&zwnj;چوری تازه و گوجه خشک اضافه شده.
+یک اسنک خاص، پرهیجان و فوق&zwnj;العاده خوشمزه که همه را به وجد می&zwnj;آورد</div><div>228 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44102" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1698166491.jpg" data-price="180" data-name=" حمص"><div onclick="get_food_detail(44102)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1698166491.jpg"></div><div><div> حمص</div><div>اصالت شرقی در یک لقمه
+ترکیبی کرمی از نخود پخته و ارده، با عطر لیمو و روغن زیتون خالص. روی آن سالاد سبزیجات تازه و نخود برشته برای طعمی متفاوت.
+یک پیش&zwnj;غذای سالم، گیاهی و خاص که هر میز را رنگین&zwnj;تر و خوشمزه&zwnj;تر می&zwnj;کند.</div><div>180 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44095" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1742751997.jpg" data-price="350" data-name="بافِلو وینگز( مقداری تند)"><div onclick="get_food_detail(44095)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1742751997.jpg"></div><div><div>بافِلو وینگز( مقداری تند)</div><div>بال&zwnj;های آتشین
+بال مرغ سوخاری تُرد، غلتیده در سس بافلو تند و خوش&zwnj;عطر؛ هر لقمه ترکیبی از تردی، تندی و خوشمزگی هیجان&zwnj;انگیز. پیش&zwnj;غذایی پرطرفدار که اشتها رو دو برابر می&zwnj;کنه</div><div>350 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="48053" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686505090.jpg" data-price="150" data-name="کشک بادمجان "><div onclick="get_food_detail(48053)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686505090.jpg"></div><div><div>کشک بادمجان </div><div>کشک و بادمجان؛ اصالت در هر لقمه
+بادمجان&zwnj;های سرخ&zwnj;شده و له&zwnj;شده با کشک تازه،  گردوی سفید، نعنا داغ و پیاز داغ معطر. ترکیبی کرمی، خوشمزه و اصیل که مزه&zwnj;ی سفره&zwnj;های ایرانی را به شکلی خاص و لوکس زنده می&zwnj;کند.</div><div>150 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="48055" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1687020580.jpg" data-price="130" data-name="بورانی اسفناج"><div onclick="get_food_detail(48055)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1687020580.jpg"></div><div><div>بورانی اسفناج</div><div>ترکیب سبز و کرمی
+اسفناج تازه با ماست چکیده و سیر معطر، پیش&zwnj;غذایی سبک، سالم و خوشمزه. طعمی ساده اما خاص که سفره را تازه&zwnj;تر و دلچسب&zwnj;تر می&zwnj;کند</div><div>130 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="48054" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686505138.jpg" data-price="140" data-name="بورانی بادمجان"><div onclick="get_food_detail(48054)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686505138.jpg"></div><div><div>بورانی بادمجان</div><div>عطر آتش، طعم اصالت
+بادمجان کبابی با عطر دودی وسوسه&zwnj;انگیز، ترکیب&zwnj;شده با ماست چکیده و گردوی سفید و سیر تازه. پیش&zwnj;غذایی سبک، کرمی و خوشمزه که طعم اصیل ایرانی را به شکلی خاص و متفاوت زنده می&zwnj;کند.</div><div>140 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="47089" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1698166591.jpg" data-price="250" data-name="بروسکتا بوقلمون"><div onclick="get_food_detail(47089)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1698166591.jpg"></div><div><div>بروسکتا بوقلمون</div><div> لقمه&zwnj;ای ظریف و خاص
+نان لوف  تُست شده&zwnj;ی خوش&zwnj;عطر با سس پستوروسو، روی آن بوقلمون دودی، سبزی تازه و گوجه خشک. ترکیبی سبک، خوشمزه و شیک که شروع هر میزی را خاص و به&zwnj;یادماندنی می&zwnj;کند.</div><div>250 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="49327" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1704652708.jpg" data-price="300" data-name="اُلیو"><div onclick="get_food_detail(49327)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1704652708.jpg"></div><div><div>اُلیو | Olive</div><div>زیتون&zwnj;های لوکس و متفاوت
+زیتون سبز تازه که 4 ساعت در آب پرتقال آرام&zwnj;پز شده و با عسل، روغن زیتون و بوی سیر مزه&zwnj;دار شده. همراه با بیکو گوجه خشک و پنیر فتا، سرو شده کنار نان تست کره&zwnj;ای.
+یک پیش&zwnj;غذای خاص، خوشمزه و متفاوت که مزه&zwnj;ای تازه و به&zwnj;یادماندنی خلق می&zwnj;کند</div><div>300 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="47090" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1742750488.jpg" data-price="280" data-name="بروسکتا رست بیف"><div onclick="get_food_detail(47090)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1742750488.jpg"></div><div><div>بروسکتا رست بیف</div><div> لقمه&zwnj;ای لوکس و خوشمزه
+نان لوف  تست تُرد با برش&zwnj;های نازک رست&zwnj;بیف آبدار، همراه با سبزی تازه و سس مخصوص. پیش&zwnj;غذایی سبک، شیک و پر از طعم که شروع هر میز را خاص&zwnj;تر می&zwnj;کند</div><div>280 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44103" data-image="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png" data-price="280" data-name="سوپ روز"><div onclick="get_food_detail(44103)"><div><img src="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png"></div><div><div>سوپ روز</div><div>سوپ مخصوص سرآشپز</div><div>280 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div></div><div class="m6_title" id="section_4" data-index="4"><div class="food_label">Main Course</div><div class="m6_food food_bx" data-hasoption="false" data-id="50924" data-image="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png" data-price="2.500" data-name="استیک تاماهاک"><div onclick="get_food_detail(50924)"><div><img src="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png"></div><div><div>استیک تاماهاک</div><div>راسته گوساله با استخوان بلند تاماهاک، آرام&zwnj;گریل&zwnj;شده تا مغزپختی دلخواه شما. بیرون کاراملی و دودی، درون آبدار و لطیف.
+یک تجربه باشکوه و لوکس برای عاشقان استیک که فقط با دیدنش هم اشتها دو برابر می&zwnj;شود.</div><div>2.500 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="49979" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1742750415.jpg" data-price="1.200" data-name="استیک آنتروکت"><div onclick="get_food_detail(49979)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1742750415.jpg"></div><div><div>استیک آنتروکت | entrecote steak</div><div>راسته&zwnj;ی گوساله&zwnj;ی تازه و با دقت انتخاب&zwnj;شده، با تکنیک سووید بیش از 2 ساعت در فر مخصوص نیم&zwnj;پز می&zwnj;شود تا لطافت و آبداری بی&zwnj;نظیرش حفظ شود، سپس روی گریل به کمال می&zwnj;رسد.
+
+در کنار آن، سس اختصاصی آنتروکت سرو می&zwnj;شود؛ سسی که 5 ساعت زمان می&zwnj;برد تا با ترکیب ریحان ایتالیایی، جعفری تازه، ترخون معطر، سیر و خردل دیژون  به طعمی عمیق و فراموش&zwnj;نشدنی برسد.
+
+این استیک لوکس فقط در شیراز و فقط در لافارین سرو می&zwnj;شود</div><div>1.200 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="47005" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1742750544.jpg" data-price="1.250" data-name="بالزامیک گلِیز و پسته"><div onclick="get_food_detail(47005)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1742750544.jpg"></div><div><div>بالزامیک گلِیز و پسته | Balsamic glaze &amp; pistachio</div><div>لقمه&zwnj;های لوکس با امضایی لافارین
+تکه&zwnj;های مکعبی فیله گوساله که با تکنیک سووید بیش از 2 ساعت در فر مخصوص نیم&zwnj;پز و لطیف شده&zwnj;اند، سپس آغشته به سس بالزامیک گلیز و خامه.
+همراه با مغز پسته برشته، پوره سیب&zwnj;زمینی ابریشمی، کرنبری شیرین–ترش و روکولای تازه.
+یک ترکیب ظریف و لوکس که طعم&zwnj;های متضاد را به هماهنگی کامل می&zwnj;رساند.
+این استیک لوکس  فقط در لافارین سرو می&zwnj;شود</div><div>1.250 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="47086" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1704649625.jpg" data-price="990" data-name="بیف استروگانوف با چیپس"><div onclick="get_food_detail(47086)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1704649625.jpg"></div><div><div>بیف استروگانوف با چیپس | Beef Stroganoff</div><div>کلاسیک لذیذ
+فیله گوساله ژولین&zwnj;شده، تفت&zwnj;خورده با قارچ و خیارترش تازه، آغشته به خامه ترش و کرمی. در کنار چیپس طلایی و ترد سرو می&zwnj;شود؛ ترکیبی اصیل، خوشمزه و همیشه محبوب</div><div>990 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="46902" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686132702.jpg" data-price="930" data-name="فیش اند چیپس"><div onclick="get_food_detail(46902)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686132702.jpg"></div><div><div>فیش اند چیپس | Fish &amp; chips</div><div>کلاسیک بریتانیایی با امضای لافارین
+فیله&zwnj;ی لطیف ماهی کفشک، سوخاری&zwnj;شده تا بافتی ترد و طلایی پیدا کند؛ سرو شده با چیپس داغ و سس تارتار مخصوص.
+یک تجربه&zwnj;ی اصیل انگلیسی، اما در لافارین با ماهی خاص و کیفیتی متفاوت
+
+این بشقاب با پوره نخودفرنگی کرمی و سبزِ زنده همراه است که الهام&zwnj;گرفته از سنت اصیل انگلیسی است و طعمی تازه و خاص به ترکیب اضافه می&zwnj;کند.
+سس تارتار لافارین، آخرین لایه از این تجربه کلاسیک و در عین&zwnj;حال مدرن را کامل می&zwnj;سازد.</div><div>930 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44069" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503689.jpg" data-price="550" data-name="چیکن فهیتا (تند)"><div onclick="get_food_detail(44069)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503689.jpg"></div><div><div>چیکن فهیتا (تند) | Chicken fajita</div><div>انفجار طعم و رنگ
+سینه مرغ گریل&zwnj;شده با فلفل دلمه&zwnj;ای&zwnj;های رنگی و پیاز کاراملی، سرو شده همراه با خامه ترش، سس سالسا و پنیر.
+ترکیبی تند، داغ و هیجان&zwnj;انگیز که سر میز شما مثل یک جشن مکزیکی می&zwnj;درخشد.</div><div>550 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44070" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1747303429.jpeg" data-price="1.100" data-name="بیف فهیتا (تند)"><div onclick="get_food_detail(44070)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1747303429.jpeg"></div><div><div>بیف فهیتا (تند) | Beef fajita</div><div>طعم جسور مکزیک
+فیله گوساله آبدار، گریل شده با فلفل دلمه&zwnj;ای و پیاز کاراملی، همراه با خامه ترش، سس سالسا و پنیر.
+ترکیبی تند و لذیذ که روی تاوا سرو میشه و عطر و طعمش میز رو پر از هیجان می&zwnj;کنه.</div><div>1.100 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="48751" data-image="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png" data-price="1.000" data-name="سرلوین استیک "><div onclick="get_food_detail(48751)"><div><img src="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png"></div><div><div>سرلوین استیک  | Sirloin steak</div><div>استیک مغز راسته گوساله، گریل&zwnj;شده با دقت و سرو شده در کنار سبزیجات بلانچ تازه و پوره سیب&zwnj;زمینی کرمی.
+این تجربه با سس خاص پپرکورن (دانه فلفل سیاه) تکمیل می&zwnj;شود؛ طعمی عمیق و اصیل برای عاشقان استیک.</div><div>1.000 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44067" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503824.jpg" data-price="1.300" data-name="ریب استیک"><div onclick="get_food_detail(44067)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503824.jpg"></div><div><div>ریب استیک | Rib steak</div><div>استیک آبدار و لذیذ ریب با استخوان، گریل&zwnj;شده روی حرارت ملایم برای حفظ طعم اصیل گوشت.
+سرو می&zwnj;شود همراه با سبزیجات بلانچ رنگارنگ، پوره سیب&zwnj;زمینی کرمی و سس ویژه پپرکورن که عطر و مزه&zwnj;ای بی&zwnj;نظیر به این بشقاب می&zwnj;دهد</div><div>1.300 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="50266" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1747303355.jpeg" data-price="1.350" data-name="T-boneاستیک"><div onclick="get_food_detail(50266)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1747303355.jpeg"></div><div><div>T-boneاستیک</div><div>استیک کلاسیک و پرطرفدار آمریکایی با برشی خاص از راسته و فیله، که دو بافت متفاوت و جذاب گوشت را در یک برش کنار هم دارد.
+با فرایند سووید اختصاصی لافارین بیش از دو ساعت پخت ملایم دیده و سپس روی حرارت مستقیم گریل شده تا طعم دودی و بافت آبدار آن کامل شود.
+کنار این استیک لوکس، سبزیجات بلانچ تازه، پوره سیب&zwnj;زمینی کرمی و سس پپرکورن سرو می&zwnj;گردد.</div><div>1.350 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44066" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503801.jpg" data-price="1.200" data-name="فیله استیک"><div onclick="get_food_detail(44066)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503801.jpg"></div><div><div>فیله استیک | Fillet steak</div><div>لطیف&zwnj;ترین برش گوساله، بافتی کره&zwnj;ای و آبدار که پس از سووید طولانی در فر اختصاصی لافارین به کمال رسیده و سپس روی حرارت داغ گریل، عطر دودی دل&zwnj;نشین گرفته است.
+این شاهکار گوشت، در کنار پوره سیب&zwnj;زمینی کرمی، سبزیجات بلانچ تازه و سسی غنی از قارچ تازه و خامه سرو می&zwnj;شود؛ ترکیبی که عمق طعم و لطافت را هم&zwnj;زمان روی میز شما می&zwnj;آورد</div><div>1.200 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44068" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503850.jpg" data-price="550" data-name="چیکن استیک"><div onclick="get_food_detail(44068)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503850.jpg"></div><div><div>چیکن استیک | Chicken steak</div><div>سینه مرغ تازه، پس از ماریناد ویژه لافارین با ترکیبی از سبزیجات معطر، روغن زیتون و ادویه&zwnj;های مدیترانه&zwnj;ای، به&zwnj;آرامی گریل می&zwnj;شود تا عطر دودی و طعمی بی&zwnj;نظیر پیدا کند.
+این استیک سبک و سالم، در کنار پوره سیب&zwnj;زمینی کرمی، سبزیجات بلانچ رنگارنگ سرو می&zwnj;گردد؛ انتخابی خوشمزه و ظریف برای میهمانانی که به دنبال تعادلی از سلامت و لذت هستند.</div><div>550 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div></div><div class="m6_title" id="section_5" data-index="5"><div class="food_label">Pizza</div><div class="m6_food food_bx" data-hasoption="false" data-id="51307" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1755789084.jpeg" data-price="600" data-name="پولپته پیتزا"><div onclick="get_food_detail(51307)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1755789084.jpeg"></div><div><div>پولپته پیتزا | Polpette pizza</div><div>وقتی پیتزا به یک اثر هنری تبدیل می&zwnj;شود…
+پیتزای سیگنیچر لافارین
+خمیر دست&zwnj;ساز ناپولی با سس کرمی بیانکا، آمیخته با پارمیزان کهنه و پنیر ایتالیایی، در کنار بیکن گوساله و میت&zwnj;بال&zwnj;های دست&zwnj;ساز از مغز ران تازه. این شاهکار با پستو سبز، گوجه خشک آفتاب&zwnj;دیده، گل اوشین و دلمه&zwnj;های رنگی تازه تزئین شده و در نهایت با روغن زیتون بکر تکمیل می&zwnj;شود؛ تجربه&zwnj;ای اصیل و فراموش&zwnj;نشدنی به سبک لافارین.</div><div>600 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="49504" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1714572515.jpg" data-price="520" data-name="هات هانی پپرونی (تند و شیرین)"><div onclick="get_food_detail(49504)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1714572515.jpg"></div><div><div>هات هانی پپرونی (تند و شیرین) | Hot honey &amp; pepperoni</div><div>پیتزایی خاص و هیجان&zwnj;انگیز که تضاد طعمی تندی و شیرینی را در یک لقمه جمع می&zwnj;کند.
+خمیر ناپولیتن با پخت آتشی، پایه&zwnj;ای برای سس دلمه زرد و پنیر موزارلاست؛ روی آن پپرونی&zwnj;های اصیل ایتالیایی قرار می&zwnj;گیرند و در نهایت با عسل چیلی (هات هانی) لعاب زده می&zwnj;شوند.
+
+ترکیب پپرونی دودی و نمکی با شیرینی-تندی عسل چیلی، تجربه&zwnj;ای کاملاً متفاوت و جذاب برای علاقه&zwnj;مندان طعم&zwnj;های جسورانه می&zwnj;آفریند.
+لمس پایانی ریحان ایتالیایی تازه عطر و رایحه را کامل می&zwnj;کند.
+
+ این پیتزا در لافارین یک انتخاب امضادار برای کسانی است که به دنبال طعمی مدرن و متفاوت هستند.</div><div>520 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44077" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686514081.jpg" data-price="640" data-name="فیلتو"><div onclick="get_food_detail(44077)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686514081.jpg"></div><div><div>فیلتو</div><div>یک ترکیب منحصر&zwnj;به&zwnj;فرد و فاخر با فیله گوساله آبدار، روی لایه&zwnj;ای از سس گوجه تازه و دست&zwnj;ساز.
+طعمی جسورانه از بلوچیز اصیل در کنار فیله فلفل دلمه دودی و سس برنز خوش&zwnj;عطر، بافتی عمیق و پیچیده ایجاد می&zwnj;کند.
+
+همه این&zwnj;ها در کنار موتزارلای تازه، تعادلی لوکس میان دودی، خامه&zwnj;ای و تندی ملایم را به وجود می&zwnj;آورد.
+
+ فیلتو؛ انتخابی برای کسانی که دنبال تجربه&zwnj;ای متفاوت و قدرتمند از طعم استیک در قالب پیتزا هستند.</div><div>640 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="49506" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1714572996.jpg" data-price="590" data-name="بیکن و رومسکو (تند)"><div onclick="get_food_detail(49506)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1714572996.jpg"></div><div><div>بیکن و رومسکو (تند) | Bacon &amp; romesco</div><div>یک تجربه جسورانه و متفاوت؛ روی خمیر اصیل ناپولیتن، بیکن گوساله دودی و ترد پهن شده تا رایحه&zwnj;ای غنی و عمیق به پیتزا ببخشد.
+ترکیب پنیر پارمزان و موتزارلا، لطافت و کشسانی بی&zwnj;نقصی ایجاد می&zwnj;کند و در کنار آن، قارچ تازه طعمی دلنشین و خاکی به بافت اضافه می&zwnj;کند.
+
+اما نقطه اوج این پیتزا، سس رومسکوی اسپانیایی با پرک چیلی تند است؛ سسی مخملی و آتشین که از فلفل، گوجه و روغن زیتون تهیه شده و طعم بیکن را برجسته&zwnj;تر می&zwnj;سازد.
+
+بیکن و رومسکو، انتخابی برای عاشقان طعم&zwnj;های جسور، تند و به&zwnj;یادماندنی</div><div>590 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44979" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686504097.jpg" data-price="620" data-name="فیلتو دی آیلیو"><div onclick="get_food_detail(44979)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686504097.jpg"></div><div><div>فیلتو دی آیلیو</div><div>شاهکار خاص لافارین
+
+یک پیتزای فاین&zwnj;داینینگ در سطح رستوران&zwnj;های لوکس اروپا، اما با اصالت لافارین در شیراز.
+خمیر ناپولیتن با استراحت طولانی&zwnj;مدت، پایه&zwnj;ای برای سس سفید ابریشمی است. روی آن فیله گوساله سووید شده با فرایند طولانی قرار می&zwnj;گیرد؛ گوشتی که در هر برش، لطافت و آبداری بی&zwnj;نظیری دارد.
+ترکیب پوره سیر کاراملی و پیاز بنفش تازه، رایحه&zwnj;ای عمیق و لایه&zwnj;ای از طعم&zwnj;های تند-شیرین می&zwnj;آفریند.
+
+این پیتزا تنها در لافارین سرو می&zwnj;شود و تجربه&zwnj;ای است که حتی در بهترین رستوران&zwnj;های ایتالیا به&zwnj;سادگی نخواهید یافت</div><div>620 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="48448" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686672957.jpg" data-price="320" data-name="نان سیر "><div onclick="get_food_detail(48448)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686672957.jpg"></div><div><div>نان سیر  | Meta calzone</div><div>این نان خاص فقط در لافارین سرو می&zwnj;شود؛
+خمیر ناپولیتن بافت نرم و سبک، پر شده از کانفی سیر تازه، پنیر اسفناج، سس مارینارا، پنیر موزارلا و ریحان ایتالیایی.
+روی آن در حرارت تنور ایتالیایی برشته می&zwnj;شود تا هم عطر سیر کاراملی شده و هم کشسانی پنیر موزارلا در اولین برش مهمانان را شگفت&zwnj;زده کند</div><div>320 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="49505" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1714572130.jpg" data-price="480" data-name="پولو"><div onclick="get_food_detail(49505)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1714572130.jpg"></div><div><div>پولو | Polo</div><div>یک انتخاب لطیف و خوش&zwnj;عطر از منوی لافارین، با خمیر اصیل ناپولیتن که در آتش مخصوص پخته می&zwnj;شود.
+پایه این پیتزا با سس دلمه زرد آغاز می&zwnj;شود و روی آن سینه مرغ مزه&zwnj;دار و گریل&zwnj;شده قرار می&zwnj;گیرد. ترکیبی از پنیر موتزارلا کشدار، پارمزان اصیل ایتالیایی و عطر ملایم ریحان تازه، هارمونی کاملی ایجاد می&zwnj;کند.
+
+برای تکمیل طعم، پیاز بنفش کاراملی&zwnj;شده و قارچ تازه به بافت و مزه اضافه شده&zwnj;اند و پیتزا را به یک گزینه متعادل میان سبکی و غنای طعمی تبدیل می&zwnj;کنند.
+
+ پیتزا پولو انتخابی است برای کسانی که دنبال یک تجربه&zwnj;ی سبک، سالم و در عین حال لوکس در دنیای پیتزا هستند</div><div>480 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44086" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1660756427.jpg" data-price="380" data-name="مارگریتا"><div onclick="get_food_detail(44086)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1660756427.jpg"></div><div><div>مارگریتا</div><div>ساده، اصیل و بی&zwnj;زمان؛ پیتزای مارگریتا ریشه در قلب ناپل دارد و در لافارین با نهایت دقت و اصالت سرو می&zwnj;شود.
+پایه این شاهکار با سس گوجه&zwnj;فرنگی تازه و دست&zwnj;ساز آغاز می&zwnj;شود که طعمی طبیعی و سرزنده دارد. روی آن پنیر موتزارلای تازه و کشدار پهن شده تا لطافت و کشسانی بی&zwnj;نقصی ایجاد کند.
+
+رگه&zwnj;های معطر ریحان ایتالیایی تازه، عطری روح&zwnj;نواز به پیتزا می&zwnj;بخشد و در نهایت، پارمزان اصیل ایتالیایی تکمیل&zwnj;کننده&zwnj;ی این اثر کلاسیک است.
+
+ مارگریتا، انتخابی مینیمال اما لوکس؛ جایی که هر لقمه یادآور هنر واقعی پیتزا در ناپل است</div><div>380 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44081" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1687952510.jpg" data-price="500" data-name="پپرونی (مقداری تند)"><div onclick="get_food_detail(44081)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1687952510.jpg"></div><div><div>پپرونی (مقداری تند)</div><div>یک کلاسیک همیشه محبوب!
+خمیر ناپولیتن اصیل با سس گوجه دست&zwnj;ساز لافارین، پوشیده از لایه&zwnj;ای سخاوتمندانه پنیر موزارلا و حلقه&zwnj;های پپرونی داغ و خوش&zwnj;عطر.
+
+هر اسلایس، ترکیبی از کشسانی پنیر، تردی خمیر و تندی ملایم پپرونی که هیچ&zwnj;وقت قدیمی نمی&zwnj;شود.
+
+ انتخابی بی&zwnj;رقیب برای هر سلیقه و هر زمان!</div><div>500 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="47774" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1729581273.jpg" data-price="530" data-name="ملانزانا ترکیا"><div onclick="get_food_detail(47774)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1729581273.jpg"></div><div><div>ملانزانا ترکیا</div><div>یک ترکیب خلاقانه با الهام از عطر و طعم مدیترانه&zwnj;ای؛
+ورقه&zwnj;های بیکن بوقلمون دودی در کنار بادمجان اسموکی و کبابی، رایحه&zwnj;ای عمیق و لذیذ می&zwnj;سازند.
+تازگی اسفناج جوان با نرمی خود تعادل زیبایی به طعم می&zwnj;بخشد و در کنار آن، فلفل دلمه&zwnj;ای کبابی رنگ و عطر جذابی به پیتزا اضافه می&zwnj;کند.
+
+همه این ترکیب&zwnj;ها روی بستری از سس بادمجان دودی دست&zwnj;ساز و با پوششی از پنیر موتزارلا کشسان سرو می&zwnj;شود تا یک تجربه منحصربه&zwnj;فرد و متفاوت برای شما خلق کند.
+
+ ملانزانا ترکیا، پیتزایی برای کسانی که به&zwnj;دنبال طعمی دودی، لطیف و ماندگار هستند</div><div>530 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44078" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1687952467.jpg" data-price="580" data-name="بیکن"><div onclick="get_food_detail(44078)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1687952467.jpg"></div><div><div>بیکن</div><div>یک انتخاب ساده اما اصیل و بی&zwnj;نهایت خوش&zwnj;طعم؛
+ترکیب بیکن دودی و لذیذ با بافت کشسان و خامه&zwnj;ای موتزارلای تازه روی بستری از سس سفید کرمی، پایه این پیتزای خاص است.
+
+در پایان با روکولای تازه و رایحه تند و اصیل پارمزان کهنه تکمیل می&zwnj;شود؛
+طعم نهایی، ترکیبی از دودی، خامه&zwnj;ای و عطر سبزی&zwnj;های تازه است که حس لوکس و متفاوتی به هر برش می&zwnj;دهد.
+
+بیکن؛ تجربه&zwnj;ای ناب برای عاشقان طعم&zwnj;های کلاسیک اما شیک</div><div>580 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="47772" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686504192.jpg" data-price="420" data-name="دیاوولو (تند)"><div onclick="get_food_detail(47772)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686504192.jpg"></div><div><div>دیاوولو (تند)</div><div>یک انتخاب آتشین برای عاشقان طعم&zwnj;های جسورانه!
+خمیر ناپولیتن اصیل، پوشیده از سس گوجه دست&zwnj;ساز، سالامی پیپرونی، هالاپینیو تازه، پیاز بنفش و پنیر موزارلای کشسان.
+
+ هر لقمه انفجاری از طعم تند و لذت&zwnj;بخش است که به همراه عطر ریحان تازه، تجربه&zwnj;ای فراموش&zwnj;نشدنی در لافارین خلق می&zwnj;کند</div><div>420 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44080" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686507130.jpg" data-price="610" data-name="پولو و پستو"><div onclick="get_food_detail(44080)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686507130.jpg"></div><div><div>پولو و پستو</div><div>ترکیبی خوش&zwnj;عطر از سینه مرغ گریل&zwnj;شده با لایه&zwnj;ای از سس پستوی تازه و سبز.
+طعمی ماندگار با گوجه خشک&zwnj;شده ایتالیایی، همراه با پارمزان اصیل و موتزارلای تازه که توازن میان لطافت و عطر سبزیجات را ایجاد می&zwnj;کند.
+
+ پولو و پستو؛ انتخابی سبک، سالم و پر از طعم مدیترانه&zwnj;ای</div><div>610 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44083" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686504006.jpg" data-price="380" data-name="وردوره"><div onclick="get_food_detail(44083)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686504006.jpg"></div><div><div>وردوره</div><div>یک پیتزای گیاهی خاص و خوش&zwnj;عطر؛
+با بادمجان اسموکی و فیله فلفل دلمه دودی، در کنار قارچ تازه، زیتون و بیبی&zwnj;اسفناج.
+پیاز بنفش کاراملی عطر و شیرینی ملایمی به ترکیب می&zwnj;دهد و همه این&zwnj;ها روی بستری از پنیر موتزارلای کشسان کامل می&zwnj;شود.
+
+وِردوره؛ جشن سبزیجات دودی و تازه برای عاشقان طعم&zwnj;های سبک اما خاص.</div><div>380 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div></div><div class="m6_title" id="section_6" data-index="6"><div class="food_label">Sandwich</div><div class="m6_food food_bx" data-hasoption="false" data-id="51316" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1756542371.jpg" data-price="800" data-name="اسموکی جم برگر"><div onclick="get_food_detail(51316)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1756542371.jpg"></div><div><div>اسموکی جم برگر</div><div>در لافارین، هر جزئیات به یک اثر هنری تبدیل می&zwnj;شود. نان گرم و تازه&zwnj;ای که هر صبح در نانوایی اختصاصی لافارین پخته می&zwnj;شود، بسترِ لقمه&zwnj;ای است که با گوشت آبدار راسته گوساله آغاز می&zwnj;گردد؛ گوشتِ دست&zwnj;چین&zwnj;شده&zwnj;ای که با مهارت گریل می&zwnj;شود تا عطر دل&zwnj;انگیز دود در جانش بنشیند. سپس مربای بیکن دودی اختصاصی لافارین، با شیرینی ظریف و لایه&zwnj;های عمیق طعمی، همچون امضای سرآشپز بر برگر می&zwnj;نشیند. پنیر ذوب&zwnj;شده و تاپینگ&zwnj;های تازه، این سمفونی طعم را کامل می&zwnj;کنند.
+لقمه&zwnj;ای که تنها در لافارین یافت می&zwnj;شود؛ تجربه&zwnj;ای لوکس، برای ذائقه&zwnj;هایی که به کمتر از بهترین رضایت نمی&zwnj;دهند</div><div>800 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44076" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1704652403.jpg" data-price="590" data-name="چیکن پستو"><div onclick="get_food_detail(44076)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1704652403.jpg"></div><div><div>چیکن پستو</div><div>سینه مرغ سوخاری با روکش ترد و طلایی، در کنار سس پستوی تازه و معطر، داخل نان چاباتای دست&zwnj;ساز لافارین سرو می&zwnj;شود.
+این ساندویچ خوشمزه همراه با سیب&zwnj;زمینی ترد و سالاد تازه کامل می&zwnj;گردد.
+
+ چیکن پستو؛ ترکیبی مدیترانه&zwnj;ای، خاص و بی&zwnj;رقیب در شیراز</div><div>590 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44074" data-image="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png" data-price="800" data-name="برگر لافارین"><div onclick="get_food_detail(44074)"><div><img src="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png"></div><div><div>برگر لافارین</div><div> برگر دست&zwnj;ساز از گوشت گوساله، همراه با پیاز و قارچ گریل&zwnj;شده، لایه&zwnj;ای از رست&zwnj;بیف آبدار و پنیر ورقه&zwnj;ای طلایی.
+تازگی با کاهوی لیتل جِم کامل می&zwnj;شود و همه این&zwnj;ها درون نان مک دست&zwnj;پخت لافارین قرار می&zwnj;گیرد.
+در کنار برگر، سیب&zwnj;زمینی ترد و سالاد کلم خانگی سرو می&zwnj;شود.
+
+ برگر لافارین، امضای طعم و کیفیت؛ تجربه&zwnj;ای که فقط در لافارین می&zwnj;چشی.</div><div>800 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="46908" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1704651776.jpg" data-price="900" data-name="ساندویچ رست بیف"><div onclick="get_food_detail(46908)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1704651776.jpg"></div><div><div>ساندویچ رست بیف | Roasted beef sandwich</div><div>نان چاباتای دست&zwnj;ساز لافارین، پر شده از راسته&zwnj;ی گوساله که آرام رُست شده تا لطیف و آبدار بماند.
+همراه با گریوی غلیظ، سس رِمولاد مخصوص، قارچ تازه، پیکل خیار و پیاز بنفش کاراملی؛ روی آن لایه&zwnj;ای از پنیر گودای طلایی و کاهوی پیچ تازه طراوتی خاص می&zwnj;بخشد.
+
+یک ساندویچ لوکس و کامل؛ جایی که هر لقمه، ترکیب اصالت و خلاقیت لافارین است.</div><div>900 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="49755" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1714572014.jpg" data-price="440" data-name="چیکن گریل"><div onclick="get_food_detail(49755)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1714572014.jpg"></div><div><div>چیکن گریل | Grilled chicken</div><div>مرغ تازه و مزه&zwnj;دارشده روی آتش گریل، بافتی دودی و آبدار پیدا می&zwnj;کند و درون نان چاباتای دست&zwnj;ساز لافارین قرار می&zwnj;گیرد.
+ترکیبی از سس پیازچه خوش&zwnj;عطر، گوجه تازه و کاهوی پیچ ترد در کنار سالاد کلم خانگی طعمی متعادل می&zwnj;سازد.
+این ساندویچ در کنار فرنچ&zwnj;فرایز ترد و سس تند اختصاصی سرو می&zwnj;شود.
+
+ یک انتخاب سالم، خوشمزه و متفاوت که امضای لافارین را دارد</div><div>440 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="48052" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503941.jpg" data-price="740" data-name="اسمش برگر"><div onclick="get_food_detail(48052)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503941.jpg"></div><div><div>اسمش برگر</div><div>نان مک دست&zwnj;ساز لافارین، پر شده با گوشت فیله و راسته گوساله آبدار، همراه با سس قارچ کرمی و پیاز کاراملی شیرین.
+روی آن پنیر گودای طلایی ذوب شده و در کنار فرنچ&zwnj;فرایز ترد سرو می&zwnj;شود.
+
+تمام نان&zwnj;های این برگر و دیگر آیتم&zwnj;های لافارین به&zwnj;صورت اختصاصی در مجموعه تولید می&zwnj;شوند؛ یک کلاسیک لوکس که فقط در لافارین طعم واقعی&zwnj;اش را تجربه می&zwnj;کنید</div><div>740 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="51250" data-image="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png" data-price="750" data-name="هات داگ ناپولیتن"><div onclick="get_food_detail(51250)"><div><img src="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png"></div><div><div>هات داگ ناپولیتن</div><div>هات&zwnj;داگ گوساله آبدار درون نان مک دست&zwnj;ساز لافارین، پوشیده از سس گوجه ناپولیتن تازه، همراه با پیاز کاراملی، پنیر موتزارلا کشسان و ریحان ایتالیایی.
+یک فست&zwnj;فود کلاسیک، اما در قالبی لوکس و خاص؛ تجربه&zwnj;ای که فقط در لافارین پیدا می&zwnj;شود.
+
+هات&zwnj;داگ ناپولی؛ طعم اصیل ناپل با امضای لافارین</div><div>750 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div></div><div class="m6_title" id="section_7" data-index="7"><div class="food_label">Pasta</div><div class="m6_food food_bx" data-hasoption="false" data-id="49208" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1704965322.jpg" data-price="920" data-name="بیف استروگانوف با پاستا "><div onclick="get_food_detail(49208)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1704965322.jpg"></div><div><div>بیف استروگانوف با پاستا  | Beef stroganoff</div><div>برش&zwnj;های ژولین از فیله گوساله آبدار، تفت&zwnj;خورده با قارچ تازه و خیار ترش، آغشته به خامه ترش کرمی.
+این ترکیب اصیل روسی روی بستری از پاستای دست&zwnj;ساز لافارین سرو می&zwnj;شود؛ جایی که هر لقمه تلفیقی از اصالت، لطافت و هنر آشپزی مدرن است.
+
+استروگانوف لافارین؛ یک کلاسیک جهانی، اما در شیراز فقط به سبک ما.</div><div>920 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44065" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503912.jpg" data-price="880" data-name="لازانیا"><div onclick="get_food_detail(44065)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1686503912.jpg"></div><div><div>لازانیا</div><div>ورقه&zwnj;های تازه و دست&zwnj;ساز لازانیا با خمیر تازه و غنی&zwnj;شده از آرد ایتالیایی، لایه&zwnj;لایه پر شده با سس بلونیز غنی و گوجه خشک&zwnj;شده ایتالیایی که عطری عمیق و ماندگار می&zwnj;بخشند.
+لایه&zwnj;هایی از گوشت راسته گوساله چرخ&zwnj;شده که به&zwnj;آرامی در گوجه&zwnj;فرنگی تازه و ادویه  به مدت 10 ساعت پخته می&zwnj;شود تا عطر و طعمی عمیق و ماندگار پیدا کند.
+هر لایه با سس بلونیز اصیل، بشامل کرمی و پنیر تازه پوشیده شده و در تنور سنگی لافارین به پخت نهایی می&zwnj;رسد. و در نهایت با سالادی تازه سرو می&zwnj;شود.
+
+خاص&zwnj;ترین لازانیای شیراز؛ تجربه&zwnj;ای بی&zwnj;رقیب که فقط در لافارین پیدا می&zwnj;کنید.</div><div>880 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44063" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1701509283.jpg" data-price="490" data-name="پاستا مرغ اسفناج"><div onclick="get_food_detail(44063)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1701509283.jpg"></div><div><div>پاستا مرغ اسفناج</div><div>خمیر پاستای دست&zwnj;ساز لافارین، پخته&zwnj;شده به سبک آل&zwnj;دانته (دندان&zwnj;گیر و خوش&zwnj;جویدنی)، همراه با سینه مرغ گریل&zwnj;شده، اسفناج تازه، قارچ و سس سفید خامه&zwnj;ای. گوجه خشک آفتاب&zwnj;دیده، رایحه&zwnj;ای عمیق و بی&zwnj;مانند به این تجربه اصیل می&zwnj;بخشد.
+تمام پاستاهای لافارین، به&zwnj;صورت هنرمندانه دست&zwnj;ساز و آل&zwnj;دانته سرو می&zwnj;شوند تا میهمان طعم واقعی ایتالیا را لمس کند.</div><div>490 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="44062" data-image="https://lafarinee.qrmenusaz.com/Media/img_1012_1742752176.jpg" data-price="620" data-name="بِل پِپِر (مقداری تند)"><div onclick="get_food_detail(44062)"><div><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1742752176.jpg"></div><div><div>بِل پِپِر (مقداری تند) | Bell peper</div><div>خمیر پاستای دست&zwnj;ساز تالیاتله لافارین، پخته&zwnj;شده به سبک آل&zwnj;دانته، آمیخته با ژولین فیله گوساله، سس فلفل دلمه&zwnj;ای آتشین و پنیر پارمزان که روی زبان ذوب می&zwnj;شود.
+ترکیب گوجه گیلاسی خشک&zwnj;شده در آفتاب، پیازچه تازه و ریحان ایتالیایی، عطری بی&zwnj;بدیل به این بشقاب می&zwnj;بخشد؛ تجربه&zwnj;ای که بین حرارت ملایم و طراوت مدیترانه&zwnj;ای در نوسان است.
+
+✨ مخصوص کسانی که عاشق طعم جسورانه و لوکس ایتالیا هستند.</div><div>620 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div><div class="m6_food food_bx" data-hasoption="false" data-id="48061" data-image="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png" data-price="350" data-name="پاستا پستو"><div onclick="get_food_detail(48061)"><div><img src="https://lafarinee.qrmenusaz.com/Media/header_1012_1657123380.png"></div><div><div>پاستا پستو</div><div>خمیر پاستای دست&zwnj;ساز لافارین، پخته&zwnj;شده به سبک آل&zwnj;دانته، در سس پستو جنووایی اصیل با عطر تازه ریحان، روغن زیتون بکر و مغز کاج پیچیده می&zwnj;شود.
+پنیر پارمزان که روی رشته&zwnj;ها می&zwnj;نشیند، این بشقاب را به اوج لذت مدیترانه&zwnj;ای می&zwnj;رساند.
+
+ برای تجربه&zwnj;ای کامل&zwnj;تر و پروتئینی&zwnj;تر، می&zwnj;توانید سینه مرغ گریل&zwnj;شده را به این پاستا بیفزایی</div><div>350 تومان</div></div></div><div><span onclick="add_note(this)">افزودن به یادداشت</span></div></div></div></div></div>
+        <div id="t1_detail" class="tbl">
+            <div>
+                <div id="detail_window">
+                    <div class="tbl"><div></div><div><img src="https://lafarinee.qrmenusaz.com/Temp/close_black.png" onclick="close_t1_detail()"></div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="t1_options" class="tbl">
+            <div>
+                <div id="option_window">
+                    <div class="tbl"><div>افزودن غذا به یادداشت</div><div><img src="https://lafarinee.qrmenusaz.com/Temp/close_black.png" onclick="close_t1_option()"></div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+                    <div id="note_button" onclick="show_notes()">مشاهده دفترچه یادداشت<span class="notes_number"></span></div>
+            <div id="note_window">
+                <div id="note_items">
+                    <div class="tbl"><div>دفترچه یادداشت</div><div><i onclick="hide_notes()"></i></div></div>
+                    <div></div>
+                    <div>
+                        <span onclick="get_menu_screen()">اسکرین شات</span>
+                                                                    </div>
+                </div>
+                <div id="">
+                    <div class="tbl"><div><i onclick="order1()"></i>ثبت سفارش</div><div><i onclick="hide_notes()"></i></div></div>
+                    <div>
+                                                                            <div class="order_mode" onclick="order3()"><img src="https://lafarinee.qrmenusaz.com/Temp/order_mode_1.png"><div>دریافت سفارش در رستوران</div></div>
+                                                                    </div>
+                </div>
+                <div id="">
+                    <div class="tbl"><div><i onclick="order2()"></i>تحویل حضوری</div><div><i onclick="hide_notes()"></i></div></div>
+                    <div>
+                        <div class="order_forms">
+                            <div class="order_form"><label>نام و نام خانوادگی</label><input id="or1-name" type="text"></div>
+                            <div class="order_form"><label>شماره موبایل</label><input id="or1-mobile" type="text"></div>
+                            <div class="order_form"><label>شماره میز (اختیاری)</label><input id="or1-desk" type="text"></div>
+                            <div class="order_form"><label>نحوه دریافت</label>
+                                <select id="or1-type">
+                                    <option value=""></option>
+                                    <option value="pack">بسته بندی شود</option>
+                                    <option value="non-pack">داخل رستوران میل می شود</option>
+                                </select>
+                            </div>
+                            <div class="order_form">
+                                <label>توضیحات اختیاری</label>
+                                <textarea id="or1-comment"></textarea>
+                            </div>
+                            <div id="order_factor1">
+                                <div><span>هزینه سفارشات</span><span></span></div>
+                                <div><span>مالیات</span><span></span></div>
+                                <div><span>مبلغ قابل پرداخت</span><span></span></div>
+                            </div>
+                            <div class="order_payment" id="or1-payment">
+                                                                    <label><input type="radio" checked="checked" name="pay1" value="cash">پرداخت حضوری و نقدی</label>                                                            </div>
+                            <div class="order_form_button"><span onclick="save_order1(1012)">تایید</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="">
+                    <div class="tbl"><div><i onclick="order2()"></i>ارسال پیک</div><div><i onclick="hide_notes()"></i></div></div>
+                    <div>
+                        <script>var tax_percent = 0;</script>
+                        <div class="order_forms">
+                            <div class="order_form"><label>نام و نام خانوادگی</label><input id="or2-name" type="text"></div>
+                            <div class="order_form"><label>شماره موبایل</label><input id="or2-mobile" type="text"></div>
+                            <div class="order_form">
+                                <label>توضیحات اختیاری</label>
+                                <textarea id="or2-comment"></textarea>
+                            </div>
+                            <div class="order_form"><label>آدرس کامل پستی</label><input type="text" id="or2-address"></div>
+                            <div class="order_map">
+                                <label>موقعیت روی نقشه</label>
+                                <div id="map"><div id="mapid"></div><i></i></div>
+                                <script>
+                                                                        var selected_location = {
+                                        lat:24.206889622398023,
+                                        lng:26.367187500000004                                    }
+                                    $(document).ready(function() {
+
+                                    });
+                                </script>
+                            </div>
+                            <div id="order_factor2">
+                                <div><span>هزینه سفارشات</span><span></span></div>
+                                <div><span>هزینه ارسال</span><span></span></div>
+                                <div><span>مالیات</span><span></span></div>
+                                <div><span>مبلغ قابل پرداخت</span><span></span></div>
+                            </div>
+                            <div class="order_payment" id="or2-payment">
+                                                                                                                                                                                    <label><input type="radio" checked="checked" name="pay2" value="cash">پرداختی حضوری و نقدی</label>
+                                                                                                </div>
+                                                            <div class="order_form_button" id="delivery_button">
+                                    <span onclick="save_order2(1012)">تایید</span>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div id="loading" class="tbl"><div><i></i></div></div>
+<script>
+	var main_path = 'https://lafarinee.qrmenusaz.com/';
+	var message = '';
+	var message_mode = 0;
+	$(document).ready(function() {
+		if(message!='') {
+			show_message(message_mode,message);
+		}
+	});
+	</script>
+<div id="message_bar" class="">
+	<div onclick="hide_message()"><i></i><span></span></div>
+</div>
+
+
+<div id="window_over_back">
+	<div class="tbl">
+		<div>
+
+			
+		</div>
+	</div>
+</div>
+    
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '68f5136e4b2d93b73a1888a6' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+</html>
